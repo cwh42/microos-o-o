@@ -1,0 +1,75 @@
+- name: MicroOS <img src="/assets/images/microos-logo.svg" alt="MicroOS Logo" height="80" align="right"/>
+  rundown: Micro Service OS providing Transactional (Atomic) Updates upon a read-only btrfs root filesystem
+  description: >-
+    Designed to host container workloads with automated administration & patching.
+    Installing openSUSE MicroOS you get a quick, small environment for deploying Containers, or any other workload that benefits from Transactional Updates. As rolling release distribution the software is always up-to-date.
+  links:
+    - name: Documentation
+      link: https://en.opensuse.org/Portal:MicroOS
+      icon: documentation
+      color: secondary
+    - name: System Requirements
+      link: https://en.opensuse.org/Kubic:SystemRequirements
+      icon: cpu
+      color: primary
+    - name: Downloads
+      link: https://en.opensuse.org/Portal:MicroOS/Downloads
+      icon: download
+      color: success
+
+- name: Kubic <img src="/assets/images/logo.svg" alt="Kubic Logo" height="100" align="right" />
+  rundown: Multi-purpose Standalone & Kubernetes Container Operating System based on openSUSE MicroOS
+  description: >-
+    <img src="/assets/images/certified-kubernetes-color.svg" alt="Certified Kubernetes" width="90" align="right" />
+    Kubernetes is an open-source system for automating deployment, scaling, and management of containerised applications.
+    Kubic uses kubeadm to provide an easy way of configuring a Kubernetes cluster across multiple machines, while our MicroOS base keeps your operating system updated automatically, with fully atomic rollbacks if required.
+  links:
+    - name: Documentation
+      link: https://en.opensuse.org/Portal:Kubic
+      icon: documentation
+      color: secondary
+    - name: System Requirements
+      link: https://en.opensuse.org/Kubic:SystemRequirements
+      icon: cpu
+      color: primary
+    - name: Downloads
+      link: https://en.opensuse.org/Portal:Kubic/Downloads
+      icon: download
+      color: success
+
+- name: Containers 
+  rundown: A huge pool of freshly build images for your workload
+  description: >-
+    Our Container Registry offers a great choice of containers based on either openSUSE Kubic or plain Tumbleweed. Use them as a base for your project and be on the safe side by our automated rebuilds in <a href="https://build.opensuse.org/">Open Build Service</a> to get security updates of your dependencies fast and easy – continuously tested by <a href="http://open.qa/">openQA</a>. You can even publish your own project using the infrastructure around Open Build Service.
+  links:
+    - name: Documentation
+      link: https://en.opensuse.org/Portal:Container
+      icon: documentation
+      color: secondary
+    - name: Registry
+      link: https://registry.opensuse.org/
+      icon: install
+      color: success
+
+- name: And much much more
+  rundown: Please contribute to our projects on Github, the Open Build Service, or join us in discussion at IRC and mailing list
+  links:
+    - name: Github
+      link: https://github.com/kubic-project
+      icon: github
+      color: light
+
+    - name: OBS
+      link: https://build.opensuse.org/project/show/devel:kubic
+      icon: spanner
+      color: light
+
+    - name: IRC
+      link: irc://irc.opensuse.org/#kubic
+      icon: chat
+      color: primary
+
+    - name: Mailing List
+      link: https://lists.opensuse.org/opensuse-kubic/
+      icon: mail
+      color: primary
