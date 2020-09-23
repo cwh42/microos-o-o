@@ -17,59 +17,48 @@
       icon: download
       color: success
 
-- name: Kubic <img src="/assets/images/logo.svg" alt="Kubic Logo" height="100" align="right" />
-  rundown: Multi-purpose Standalone & Kubernetes Container Operating System based on openSUSE MicroOS
+- name: Philosophy
+  rundown: Sit amet
   description: >-
-    <img src="/assets/images/certified-kubernetes-color.svg" alt="Certified Kubernetes" width="90" align="right" />
-    Kubernetes is an open-source system for automating deployment, scaling, and management of containerised applications.
-    Kubic uses kubeadm to provide an easy way of configuring a Kubernetes cluster across multiple machines, while our MicroOS base keeps your operating system updated automatically, with fully atomic rollbacks if required.
-  links:
-    - name: Documentation
-      link: https://en.opensuse.org/Portal:Kubic
-      icon: documentation
-      color: secondary
-    - name: System Requirements
-      link: https://en.opensuse.org/Kubic:SystemRequirements
-      icon: cpu
-      color: primary
-    - name: Downloads
-      link: https://en.opensuse.org/Portal:Kubic/Downloads
-      icon: download
-      color: success
+               - Is predictable
+               
+               - Is scalable
+               
+               - Is reliable
 
-- name: Containers 
-  rundown: A huge pool of freshly build images for your workload
+- name: Atomic Updates
+  rundown: Sit amet
   description: >-
-    Our Container Registry offers a great choice of containers based on either openSUSE Kubic or plain Tumbleweed. Use them as a base for your project and be on the safe side by our automated rebuilds in <a href="https://build.opensuse.org/">Open Build Service</a> to get security updates of your dependencies fast and easy – continuously tested by <a href="http://open.qa/">openQA</a>. You can even publish your own project using the infrastructure around Open Build Service.
-  links:
-    - name: Documentation
-      link: https://en.opensuse.org/Portal:Container
-      icon: documentation
-      color: secondary
-    - name: Registry
-      link: https://registry.opensuse.org/
-      icon: install
-      color: success
+               By using btrfs with snapshots MicroOS uses a very space
+               efficient way to store the file system's history. All the configuration
+               files in `/etc` are part of the snapshot and the rollback.
+               
+- name: Immutable
+  rundown: Sit amet
+  description: >-
+               No changes on disk (?)
+               Do your rollback by rebooting to an old snapshot. Rollbacks
+               have no other limits than the available storage size.
 
-- name: And much much more
-  rundown: Please contribute to our projects on Github, the Open Build Service, or join us in discussion at IRC and mailing list
-  links:
-    - name: Github
-      link: https://github.com/kubic-project
-      icon: github
-      color: light
+- name: Secure Updates
+  rundown: Sit amet
+  description: >-
+               The download source and the transfer are verified and secured
+               by HTTPS. All packages and repositoreis are signed to be veridied by the
+               local installer.
+               In case any dependency conflicts occur during update the
+               process gets cancelled to avoid an inconsistent system. In that
+               case an incomplete and useless snapshot gets immediately deleted to avoid
+               wasted storage capacity.
 
-    - name: OBS
-      link: https://build.opensuse.org/project/show/devel:kubic
-      icon: spanner
-      color: light
+- name: Containers
+  rundown: Sit amet
+  description: >-
+               Instally your workload in containers to keep them isolated from
+               the core filesystem. 
 
-    - name: IRC
-      link: irc://irc.opensuse.org/#kubic
-      icon: chat
-      color: primary
-
-    - name: Mailing List
-      link: https://lists.opensuse.org/opensuse-kubic/
-      icon: mail
-      color: primary
+- name: Toolbox available for debugging
+  rundown: Sit amet
+  description: >-
+               A Toolbox Container for debugging is available. Use this
+               privileged container for insatlling any tools you need for debugging your applications.
